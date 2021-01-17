@@ -18,7 +18,6 @@ let ProjectForm = (props) => {
                     type="text"
                     placeholder="Name"
                     validate={required}
-
                 />
             </div>
             <div className={style.inputArea}>
@@ -28,8 +27,6 @@ let ProjectForm = (props) => {
                     type="text"
                     placeholder="Key"
                     validate={keyProjectValidate}
-
-
                 />
             </div>
             <NavLink
