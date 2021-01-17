@@ -1,0 +1,36 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    border: 2px black solid;
+    border-radius: 8px;
+    padding: 0 20px;
+    height: 60px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+}
+
+.name_task {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.arrow {
+    width: 20px;
+}
+
+.edit_task {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.edit_task_text {
+    font-weight: bold;
+    color: black;
+}

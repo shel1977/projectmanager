@@ -1,0 +1,15 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.add_button {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 30px;
+}
+img {
+    width: 60px;
+}

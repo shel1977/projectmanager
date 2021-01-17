@@ -1,0 +1,17 @@
+#root {
+  margin: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #a9a9a9;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
