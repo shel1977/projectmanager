@@ -5,7 +5,7 @@ import iconPlus from "../../image/plus_icon-icons.com_61187.svg";
 import {connect} from "react-redux";
 import {Field, reduxForm, submit} from "redux-form";
 import {addNewProjectAC} from "../../redux/Projects_Reducer";
-import {required, keyProjectValidate} from '../../utils/validators'
+import validate from '../../utils/validators'
 
 let ProjectForm = (props) => {
     const {handleSubmit} = props
@@ -17,7 +17,6 @@ let ProjectForm = (props) => {
                     component='input'
                     type="text"
                     placeholder="Name"
-                    validate={required}
                 />
             </div>
             <div className={style.inputArea}>
@@ -26,7 +25,6 @@ let ProjectForm = (props) => {
                     component='input'
                     type="text"
                     placeholder="Key"
-                    validate={keyProjectValidate}
                 />
             </div>
             <NavLink
@@ -41,7 +39,8 @@ let ProjectForm = (props) => {
     )
 }
 const ProjectReduxForm = reduxForm({
-    form: 'projectForm'
+  form: 'projectForm',
+  validate
 })(ProjectForm)
 
 
